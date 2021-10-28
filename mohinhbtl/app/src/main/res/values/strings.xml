@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">mohinhbtl</string>
+    <string name="activity_search">Search</string>
+    <string name="cmenu_show">Show info</string>
+    <string name="cmenu_edit">Edit item</string>
+    <string name="cmenu_delete">Delete item</string>
+</resources>

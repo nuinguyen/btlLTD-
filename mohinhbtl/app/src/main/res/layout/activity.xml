@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/vovid">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MNCOVID"
+        android:textSize="80dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/back"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/btn_adduser"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vien"
+        android:textColor="#0681D5"
+        android:layout_gravity="center"
+        android:text="THÊM"
+        />
+    <Button
+        android:id="@+id/btn_alluser"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vien"
+        android:textColor="#0681D5"
+        android:layout_gravity="center"
+        android:text="THỐNG KÊ"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng số Ca :"
+                    android:textColor="#1A79ED"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#F81A1A"
+                    android:text="Count"/>
+                <TextView
+                    android:id="@+id/tv_delete_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textSize="20sp"
+                    android:textColor="#1A79ED"
+                    android:text="Xóa tất cả"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/edt_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_white_border"
+                    android:padding="10dp"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"
+                    android:textColor="@color/black"
+                    android:hint="Số thẻ or Địa chỉ or Trạng thái"
+                    />
+                <EditText
+                    android:id="@+id/edt_search_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_white_border"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"
+                    android:textColor="@color/black"
+                    android:hint="Ngày"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:text="Thong tin"
+                    android:textColor="#1A79ED"
+                    android:background="@drawable/border"
+                    android:textSize="24sp"
+                    android:padding="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+            </TableRow>
+        </TableLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"/>
+
+
+</LinearLayout>
